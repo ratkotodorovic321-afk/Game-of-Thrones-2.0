@@ -1,0 +1,258 @@
+body {
+    background-color: black;
+    color: #f0f0f0;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #d4af37;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline red;
+}
+
+a:active {
+    text-decoration: line-through white;
+}
+
+.nav-table {
+    margin: auto;
+    background-color: #3a3a3a;
+    padding: 10px;
+    text-align: center;
+}
+
+.nav-table td {
+    padding: 15px 25px;
+    font-size: 22px;
+}
+
+main {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.title {
+    color: #d4af37;
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 40px;
+    animation-name: animacija;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animacija {
+    0% {color: #d4af37;}
+    25% {color: red;}
+    50% {color:white;}
+    75% {color:blue;}
+    100% {color: #d4af37;}
+}
+
+.text {
+    color: #ddd;
+    font-size: 22px;
+    margin: 20px auto;
+    width: 80%;
+}
+
+.watch-link {
+    font-size: 20px;
+    margin-bottom: 30px;
+    text-decoration: underline;
+}
+
+.image-left {
+    border-radius: 50px;
+    float: left;
+    margin: 40px;
+    width: 600px;
+}
+
+.image-left:hover {
+    opacity: 0.3;
+    transition: 0.5s;
+}
+
+.image-right {
+    border-radius: 50px;
+    float: right;
+    margin: 40px;
+    width: 600px;
+}
+
+.image-right:hover {
+    opacity: 0.3;
+    transition: 0.5s;
+}
+
+.character-name {
+    color: #ddd;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.character-image {
+    width: 400px;
+    height: 350px;
+    display: block;
+    margin: 20px auto;
+    border: 2px solid #3a3a3a;
+}
+
+.character-image:hover {
+    opacity: 0.3;
+    transition: 0.5s;
+}
+
+.house-name {
+    color: #ddd;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.house-image {
+    width: 350px;
+    height: 350px;
+    display: block;
+    margin: 20px auto;
+    border: 2px solid #3a3a3a;
+}
+
+.house-image:hover {
+    opacity: 0.3;
+    transition: 0.5s;
+}
+
+.contact-form {
+    width: 60%;
+    margin: 40px auto;
+    text-align: left;
+    font-size: 20px;
+    color: #ddd;
+}
+
+.contact-form label {
+    display: block;
+    margin: 20px 0 8px;
+    color: #d4af37;
+    font-weight: bold;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    font-size: 18px;
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+    border: 1px solid #3a3a3a;
+}
+
+.contact-form input[type="radio"],
+.contact-form input[type="checkbox"] {
+    margin-right: 8px;
+    margin-left: 10px;
+}
+
+.contact-form input[type="submit"] {
+    margin-top: 30px;
+    padding: 10px 30px;
+    font-size: 20px;
+    background-color: #3a3a3a;
+    color: #d4af37;
+    border: 2px solid #d4af37;
+    cursor: pointer;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #d4af37;
+    color: black;
+}
+
+@media screen and (max-width: 780px) {
+
+    .nav-table {
+        width: 100%;
+    }
+
+    .nav-table td {
+        display: block;
+        padding: 12px;
+        font-size: 20px;
+    }
+
+    .title {
+        font-size: 26px;
+    }
+
+    .text {
+        font-size: 18px;
+        width: 90%;
+    }
+
+    .character-image,
+    .house-image {
+        width: 90%;
+        height: auto;
+    }
+
+    .image-left,
+    .image-right {
+        float: none;
+        display: block;
+        margin: 20px auto;
+        width: 90%;
+    }
+
+    .form input[type="text"],
+    .contact-form {
+        width: 90%;
+    }
+
+    .contact-form {
+        font-size: 18px;
+    }
+
+    .contact-form input[type="submit"] {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .nav-table td {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .title {
+        font-size: 22px;
+    }
+
+    .character-name,
+    .house-name {
+        font-size: 22px;
+    }
+
+    .text {
+        font-size: 16px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea,
+    select {
+        font-size: 16px;
+    }
+}

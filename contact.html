@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<nav>
+    <table class="nav-table">
+        <tr>
+            <td><a href="index.html">Home</a></td>
+            <td><a href="characters.html">Characters</a></td>
+            <td><a href="great-houses.html">Great Houses</a></td>
+            <td><a href="contact.html">Contact</a></td>
+        </tr>
+    </table>
+</nav>
+
+<main>
+
+    <p class="title">Contact the Citadel</p>
+
+    <p class="text">
+        Have questions, thoughts, or ravens to send?<br>
+        Fill out the form below and let your message travel across Westeros.
+    </p>
+
+    <form class="contact-form">
+
+        <label>Name</label>
+        <input type="text" name="name" placeholder="Enter your name">
+
+        <label>Email Address</label>
+        <input type="email" name="email" placeholder="Enter your email">
+
+        <label>Which House are you loyal to?</label>
+        <select name="house">
+            <option value="">Select a House</option>
+            <option>Stark</option>
+            <option>Lannister</option>
+            <option>Targaryen</option>
+            <option>Baratheon</option>
+            <option>Other</option>
+        </select>
+
+        <label>How did you discover Game of Thrones?</label>
+        <input type="radio" name="discover" value="tv"> TV
+        <input type="radio" name="discover" value="friends"> Friends
+        <input type="radio" name="discover" value="internet"> Internet
+        <input type="radio" name="discover" value="other"> Other
+
+        <label>Favorite part of the series?</label>
+        <input type="checkbox" name="favorite" value="characters"> Characters
+        <input type="checkbox" name="favorite" value="story"> Story
+        <input type="checkbox" name="favorite" value="music"> Music
+        <input type="checkbox" name="favorite" value="visuals"> Visuals
+
+        <label>Your Message</label>
+        <textarea name="message" placeholder="Write your message here..."></textarea>
+
+        <input type="submit" value="Send Raven">
+
+    </form>
+
+</main>
+
+</body>
+</html>
